@@ -1,0 +1,95 @@
+http://www.cnblogs.com/xuancaolinxia/p/5677503.html
+
+提交项目：
+
+1：创建仓库，复制仓库地址
+2：cd 到项目根目录，执行 git clone https://github.com/insigh/projectname 克隆GitHub上的仓库到本地
+3：git init 初始化git
+4：git add . 添加所有文件
+5：git commit -a -m 'comment'  提交项目到本地仓库
+6：git remote add origin https://github.com/insigh/projectname 添加远端仓库repository
+7：git push -u orgin master 
+8：over ！！！
+
+
+
+
+更新项目：
+
+1： cd到项目目录 
+2：git status  查看当前改变信息
+3：git add . 或者 git add filename 
+4：git commit -a -m 'comment'或者 git commit -m 'comment' 
+5: git push origin master  
+
+
+我也是在网页上面没有找到删除的地方, 我是在本地删除后 再提交.
+1. git pull you git url
+2. git checkout 
+3. rm -r dirName
+4. git add --all
+5. git commit -m"remove dir"
+6. git push you git url
+7. input your name 
+8. input your password
+上传项目
+
+第一步： 建立本地仓库cd到你的本地项目根目录下，执行git命令
+cd
+
+git init
+
+第二步： 将本地项目工作区的所有文件添加到暂存区
+git add .
+
+第三步：将暂存区的文件提交到本地仓库
+git commit -m “注释"
+
+第四步： 在Github上创建自己的repository
+第五步：将本地仓库关联到Github上
+git remote add origin 第四步中创建的仓库的地址，赋值地址栏里面的地址即可
+
+第六步：最后一步，将代码由本地仓库上传到Github远程仓库
+git pull --rebase origin master//(不加这句可能报错出现错误的主要原因是github中的README.md文件不在本地代码目录中
+　　可以通过该命令进行代码合并
+git push -u origin master
+
+提交代码
+
+第一步： 查看目前代码的修改状态:
+git status
+
+第二步： 查看代码修改的内容
+git diff  <file>
+
+如果该文件已暂存，那么应该使用
+
+git diff –cached<file>
+
+第三步： 暂存需要提交的文件
+
+如果是新建的文件 
+则git add <file>
+
+如果是修改的文件 
+则git add <file>
+
+如果是删除的文件 
+则git rm <file>
+
+第四步 ： 提交已暂存的文件
+git commit
+
+第五步： 同步到服务器
+
+同步到服务器前先需要将服务器代码同步到本地
+
+命令： git pull
+
+如果执行失败，就按照提示还原有冲突的文件，然后再次尝试同步。
+
+命令：git checkout – <有冲突的文件路径>
+
+同步到服务器
+
+命令： git push origin master
