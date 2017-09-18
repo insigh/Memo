@@ -1,0 +1,16 @@
+win+ E 打开文件夹
+win+ L 电脑睡眠
+win+ R 打开命令行
+win+ F 查找
+win+ Z 撤销动作
+win+ X 快捷方式
+win+ D 回到桌面
+win+ W 便签、草图板、画图
+win+ Q cortane
+win+ A 操作中心
+win+ P 投影设置
+win+ I Windows设置
+win+ U 主页设置
+win+ T 显示打开的程序
+
+Ctrl+shift+ T 浏览器恢复关闭的标签页
