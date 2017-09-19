@@ -1,0 +1,5 @@
+alias 
+commond | tee -a out.txt | cat -n    -a(add) -n(加上行号）
+df 检查磁盘剩余的命令
+
+
